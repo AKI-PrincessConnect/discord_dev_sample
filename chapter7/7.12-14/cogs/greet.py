@@ -16,8 +16,8 @@ class Greet(commands.Cog):
     async def cog_command_error(self, ctx, error):
         await ctx.send(f"エラーが発生しました。\n{error}")
     
-    async def cog_check(self, ctx):
-        return ctx.author.name == "name"
+    #async def cog_check(self, ctx):
+    #    return ctx.author.name == "name"
     
     @commands.command()
     async def hello(self, ctx):
